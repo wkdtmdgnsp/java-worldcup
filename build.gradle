@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'worldcup'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+//dependencies {
+//    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+//    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+//    testRuntimeOnly 'org.assertj:assertj-core:3.21.0'
+//}
+
+dependencies {
+    implementation 'com.github.woowacourse-projects:mission-utils:1.0.0'
+}
+
+test {
+    useJUnitPlatform()
+}
